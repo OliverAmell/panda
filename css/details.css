@@ -1,0 +1,512 @@
+@charset "UTF-8";
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 清浮动 */
+.clearfix::after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+#head {
+  height: 160px;
+  position: relative;
+  background-color: white;
+}
+#head .logo {
+  width: 225px;
+  height: 75px;
+  float: left;
+  margin: 50px 0 0 20px;
+  position: relative;
+}
+#head .logo img {
+  width: 75px;
+  height: 75px;
+  float: left;
+}
+#head .logo .right {
+  float: right;
+  text-align: center;
+  color: #43200c;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+#head .logo .right h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  cursor: pointer;
+}
+#head .logo .right span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 17px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+#head .search {
+  width: 532px;
+  height: 48px;
+  border: 2px solid #43240c;
+  box-sizing: border-box;
+  border-radius: 34px;
+  float: left;
+  margin: 50px 0 0 108px;
+  background: url(img/search.png) no-repeat center left 15px/20px 20px;
+  position: relative;
+}
+#head .search input {
+  position: absolute;
+  top: 0px;
+  left: 46px;
+  width: 355px;
+  font-size: 16px;
+  line-height: 42px;
+  color: #43200c;
+  border: 0;
+  outline: 0;
+}
+#head .search .btn {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  width: 124px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: #43200c;
+  background-color: #fee44e;
+  border-radius: 34px;
+  cursor: pointer;
+}
+#head .ensure {
+  float: right;
+  margin: 43px 86px 0 0;
+  font-size: 10px;
+  width: 182px;
+  height: 60px;
+}
+#head .ensure li {
+  float: left;
+  position: relative;
+  margin-right: 25px;
+  width: 44px;
+  height: 60px;
+  text-align: center;
+}
+#head .ensure li img {
+  display: inline-block;
+  width: 40px;
+}
+#head .ensure li span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+#head .ensure li:last-of-type {
+  margin-right: 0;
+}
+#head .land {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#head .land span {
+  font-size: 20px;
+  color: #43200c;
+  cursor: pointer;
+}
+#head .land span:hover {
+  color: red;
+}
+
+#navigation {
+  width: 100%;
+  height: 46px;
+  background-color: #43200c;
+}
+#navigation ul {
+  width: 100%;
+  height: 46px;
+}
+#navigation ul .active {
+  background-color: #fee44e;
+  color: #43240c;
+}
+#navigation ul li {
+  cursor: pointer;
+  float: left;
+  width: 166px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 47px;
+  color: white;
+}
+#navigation ul li:hover {
+  background-color: #fee44e;
+}
+#navigation ul li:first-of-type {
+  width: 220px;
+  height: 100%;
+}
+
+#purchase .information {
+  float: left;
+  width: 914px;
+  height: 352px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#purchase .information .product-img {
+  width: 282px;
+  height: 282px;
+  margin: 35px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+#purchase .information .product-img .active {
+  border: 0.5px #ff4653 solid;
+}
+#purchase .information .product-img #top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#purchase .information .product-img #top img {
+  display: inline;
+}
+#purchase .information .product-img #top #son {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  opacity: 1;
+  overflow: hidden;
+}
+#purchase .information .product-img #top #son img {
+  width: 382px;
+  height: 382px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#purchase .information .product-img #bottom {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#purchase .information .product-img #bottom div {
+  cursor: pointer;
+}
+#purchase .information .product-img #bottom div img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+}
+#purchase .information .describe {
+  align-self: flex-start;
+  width: 50%;
+  margin: 35px 26px 0 0;
+}
+#purchase .information .describe .topTxt {
+  width: 100%;
+  line-height: 33px;
+}
+#purchase .information .describe .topTxt .platform {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  color: white;
+  margin-right: 6px;
+  background-color: #ff5501;
+}
+#purchase .information .describe .topTxt .isFreePostage {
+  width: 24px;
+  height: 42px;
+  border: 0.5px #887b74 solid;
+  border-radius: 3px;
+  color: #887b74;
+}
+#purchase .information .describe .topTxt .txt {
+  font-size: 24px;
+}
+#purchase .information .describe .middlePrice {
+  width: 100%;
+  height: 87px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+#purchase .information .describe .middlePrice .middleContent {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#purchase .information .describe .middlePrice .middleContent .yuan {
+  font-size: 16px;
+  line-height: 22px;
+  color: #b1a9a5;
+  text-decoration: line-through;
+}
+#purchase .information .describe .middlePrice .middleContent .bo {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+#purchase .information .describe .middlePrice .middleContent .bo .xian {
+  font-size: 20px;
+  color: #ff4653;
+  line-height: 28px;
+}
+#purchase .information .describe .middlePrice .middleContent .bo .bigPrice {
+  font-size: 40px;
+  color: #fa585a;
+  line-height: 28px;
+}
+#purchase .information .describe .middlePrice .middleContent .bo .smallPrice {
+  font-size: 20px;
+  color: #ff4653;
+  line-height: 28px;
+}
+#purchase .information .describe .middlePrice .middleContent .bo .token {
+  height: 16px;
+  background: #feeeee;
+  border-radius: 2px;
+  border: 1px solid #fa585a;
+  font-size: 12px;
+  text-align: center;
+  line-height: 17px;
+  margin-left: 5px;
+}
+#purchase .information .describe .middlePrice .middleContent .bo p {
+  font-size: 16px;
+  color: #b1a9a5;
+  line-height: 22px;
+  margin-left: 30%;
+}
+#purchase .information .describe .bottomBtn {
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#purchase .information .describe .bottomBtn span {
+  align-self: flex-end;
+  font-size: 14px;
+  color: #fa585a;
+  line-height: 20px;
+}
+#purchase .information .describe .bottomBtn .Btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#purchase .information .describe .bottomBtn .Btn input {
+  cursor: pointer;
+  width: 224px;
+  height: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  background-color: #fa585a;
+  outline: 0;
+  border: 0;
+}
+#purchase .information .describe .bottomBtn .Btn input:hover {
+  background-color: #fa2f32;
+}
+#purchase .seller {
+  float: right;
+  width: 275px;
+  height: 352px;
+  background: #fff;
+  border: 1px solid #fee44e;
+  font-weight: 500;
+  text-align: center;
+}
+#purchase .seller .sellerTxt {
+  line-height: 31.5px;
+  width: 273px;
+  height: 63px;
+  margin: 1px 0;
+  background: linear-gradient(180deg, #fee44e, #fff 85%, #fff);
+}
+#purchase .seller .sellerTxt .line {
+  width: 56px;
+  height: 1px;
+  display: inline-block;
+  opacity: 0.2;
+  background: #43240c;
+  vertical-align: middle;
+}
+#purchase .seller .shopImg {
+  width: 150px;
+  height: 150px;
+  margin: 3px auto 0;
+}
+#purchase .seller .shopName {
+  font-size: 18px;
+  color: #43240c;
+  line-height: 25px;
+  text-align: center;
+}
+#purchase .seller .shopSore {
+  width: 168px;
+  height: 44px;
+  margin: 9px auto 17px;
+}
+#purchase .seller .shopSore ul {
+  display: flex;
+  justify-content: space-between;
+}
+#purchase .seller .shopSore .character {
+  font-size: 14px;
+  line-height: 20px;
+  color: #b1a9a5;
+}
+#purchase .seller .shopSore .score {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fb9547;
+}
+#purchase .detailsImg {
+  width: 1200px;
+  background-color: #fff;
+  margin-top: 13px;
+  overflow: hidden;
+}
+#purchase .detailsImg .imgs {
+  font-size: 0;
+  width: 790px;
+  margin: 83px 285px 6px 27px;
+}
+#purchase .detailsImg .imgs img {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+  height: 240px;
+  margin: 80px auto 0;
+  background-color: #000;
+  opacity: 0.706;
+}
+#footer .big {
+  position: relative;
+  height: 100%;
+}
+#footer .big .logo {
+  float: left;
+  width: 112px;
+  height: 112px;
+  margin: 37px 19px 0 40px;
+  margin-right: 19px;
+}
+#footer .big .content {
+  width: 144px;
+  height: 96px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 45px;
+  margin-right: 444px;
+  color: white;
+}
+#footer .big .content h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+#footer .big .content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+#footer .big .download {
+  height: 26px;
+  margin-top: -56px;
+  border: 1px solid #000;
+}
+#footer .big .download p {
+  font-size: 20px;
+  margin-left: 502px;
+  color: white;
+}
+#footer .big .download p a {
+  color: white;
+}
+#footer .big .copyright {
+  position: relative;
+  text-align: center;
+  margin-top: 88px;
+  height: 28px;
+}
+#footer .big .copyright .center {
+  height: 100%;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 18px;
+  color: white;
+}
+#footer .big .copyright .center img {
+  width: 22px;
+  height: 22px;
+}
+#footer .big .copyright .center a {
+  color: white;
+}
+
+#one {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#one div {
+  width: 83px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+#return {
+  width: 60px;
+  height: 65px;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 315px;
+}
+#return img {
+  width: 60px;
+  height: 60px;
+}
+
+/*# sourceMappingURL=details.css.map */

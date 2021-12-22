@@ -144,3 +144,10 @@ returnTop()
 
 
 
+/**
+ * 跳转详情页面
+ */
+ function turnToDetail(order){
+    //新窗口跳转详情页面并将id放在url地址中传参
+    window.open(`details.html?id=${order}`)
+}

@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #5c5a5a;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.container .header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header>img{
+    width: 75px;
+    height: 75px;
+}
+
+.header>span{
+    font-size: 20px;
+    color:#43200c ;
+}
+
+.container table {
+    width: 100%;
+}
+
+.container table th, td {
+    border-bottom: 1px dashed gray;
+    text-align: center;
+}
+.container table .xinXi {
+   font-size: 14px;
+   width: 90px;
+   height: 30;
+}
+
+.container table input[name='minus'], input[name='plus'] {
+    width: 20px;
+    text-align: center;
+    background-color: #f1ebeb;
+}
+
+.container table input[name='amount'] {
+    width: 50px;
+    text-align: center;
+}
+
+.container h2 {
+    text-align: right;
+}
+
+.container h2 span {
+    color: #fa585a;
+}
+
+.container .book-add-wrapper {
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 20px;
+    width: 400px;
+}
+
+.container .book-add-wrapper .item {
+    margin-top: 20px;
+}
+
+.container .book-add-wrapper #addbookbtn {
+    margin-top: 20px;
+}
+
+#product-list {
+    color: white;
+    background-color: #fa585a;
+    padding: 3px;
+    border: 0;
+}
