@@ -141,7 +141,7 @@ class Slider {
 
         this.auto = setInterval(() => {
             this.box.querySelector(".right-box").click()
-        }, 3000);
+        }, 1000);
 
         this.box.addEventListener("mouseenter", () => {
             clearInterval(this.auto)
@@ -150,7 +150,7 @@ class Slider {
         this.box.addEventListener("mouseleave", () => {
             this.auto = setInterval(() => {
                 this.box.querySelector(".right-box").click()
-            }, 2500);
+            }, 800);
         })
     }
 

@@ -97,8 +97,32 @@ body {
     float: right;
     margin: 43px 86px 0 0;
     font-size: 10px;
-    width: 182px;
+    width: 275px;
     height: 60px;
+}
+
+
+#head .red {
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+    float: left;
+    margin-top: 17px;
+    margin-right: 22px;
+    border: 1px solid #0fb654;
+}
+
+#head .red:hover {
+    background: rgb(194, 231, 236);
+}
+
+#head .cart {
+    color: rgb(126, 226, 167);
+
+}
+
+#head .red a:hover {
+    color: #db09ee;
 }
 
 #head .ensure li {
@@ -736,7 +760,7 @@ body {
     line-height: 70px;
     text-align: center;
     color: #43240c;
-    background-color: #fee44e;
+    background-color: #4fc782;
     border-radius: 35px;
 }
 
@@ -826,14 +850,18 @@ body {
 /* 返回顶部 */
 #return {
     width: 60px;
-    height: 65px;
+    height: 40px;
     cursor: pointer;
     position: fixed;
-    right: 50px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 80px;
+    text-align: center;
     /* display: none; */
-  }
-  #return img {
-    width: 60px;
-    height: 60px;
-  }
+}
+
+#return p,
+#return span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #07f7e3;
+}
