@@ -4,6 +4,139 @@
     font-size: 14px;
 }
 
+body {
+    background-color: white
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+}
+
+#head {
+    height: 160px;
+    position: relative;
+    background-color: rgba(31, 32, 31, 63%);
+}
+
+#head .logo .right {
+    position: absolute;
+    text-align: center;
+    top: 26px;
+    left: 100px;
+    color: #43200c;
+    float: left;
+}
+
+#head .logo .right h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    cursor: pointer;
+    color: #0fb654;
+}
+
+#head .logo .right span {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 17px;
+    transform: scale(0.6);
+    cursor: pointer;
+}
+
+
+#head .ensure {
+    float: right;
+    margin: 43px 56px 0 0;
+    font-size: 10px;
+    width: 475px;
+    height: 60px;
+}
+
+
+#head .red {
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    float: left;
+    margin-top: 17px;
+    margin-right: 100px;
+    border: 1px solid #998c8c;
+}
+
+#head .red:hover {
+    background: rgb(194, 231, 236);
+}
+
+#head .cart {
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+
+}
+
+#head .red a:hover {
+    color: #db09ee;
+}
+
+#head .ensure li {
+    float: left;
+    position: relative;
+    margin-right: 25px;
+    width: 44px;
+    height: 60px;
+    text-align: center;
+}
+
+#head .ensure li img {
+    display: inline-block;
+    width: 40px;
+}
+
+#head .ensure li span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 12px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+#head .ensure li:last-of-type {
+    margin-right: 0;
+}
+
+#head .land {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#head .land span {
+    font-size: 20px;
+    color: #43200c;
+    cursor: pointer;
+}
+
+#head .land span:hover {
+    color: red;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
 a {
     text-decoration: none;
     color: #5c5a5a;
@@ -13,11 +146,6 @@ li {
     list-style: none;
 }
 
-.container {
-    width: 1000px;
-    margin: 50px auto;
-}
-
 .container .header {
     margin-bottom: 20px;
     display: flex;
@@ -25,31 +153,39 @@ li {
     align-items: center;
 }
 
-.header>img{
-    width: 75px;
-    height: 75px;
-}
-
-.header>span{
-    font-size: 20px;
-    color:#43200c ;
+.header>span {
+    font-size: 26px;
+    color: #43200c;
 }
 
 .container table {
     width: 100%;
+    border: none;
 }
 
-.container table th, td {
-    border-bottom: 1px dashed gray;
+.container table th,
+td {
+    border-bottom: 1px solid gray;
     text-align: center;
 }
-.container table .xinXi {
-   font-size: 14px;
-   width: 90px;
-   height: 30;
+
+.container table tr:hover {
+    background: rgba(158, 201, 204, 10%);
 }
 
-.container table input[name='minus'], input[name='plus'] {
+
+.container table .ttop {
+    background: rgb(143, 226, 215);
+
+}
+
+.container table .xinXi {
+    font-size: 14px;
+    width: 400px;
+}
+
+.container table input[name='minus'],
+input[name='plus'] {
     width: 20px;
     text-align: center;
     background-color: #f1ebeb;
@@ -58,6 +194,18 @@ li {
 .container table input[name='amount'] {
     width: 50px;
     text-align: center;
+}
+
+.container .math {
+    width: 60px;
+    border: 0;
+    background: red;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    float: right;
+    margin-left: 130px;
+    cursor: pointer;
 }
 
 .container h2 {
@@ -84,8 +232,95 @@ li {
 }
 
 #product-list {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
     color: white;
     background-color: #fa585a;
     padding: 3px;
     border: 0;
+}
+
+
+
+#footer {
+    width: 100%;
+    height: 220px;
+    margin: 80px auto 0;
+    background-color: #000;
+    opacity: 0.706;
+}
+
+#footer .big {
+    position: relative;
+    height: 100%;
+}
+
+#footer .big .logo {
+    float: left;
+    width: 112px;
+    height: 112px;
+    margin: 37px 19px 0 40px;
+    margin-right: 19px;
+}
+
+#footer .big .content {
+    width: 144px;
+    height: 96px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 444px;
+    color: white;
+}
+
+#footer .big .content h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#footer .big .content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#footer .big .download {
+    height: 26px;
+    margin-top: -56px;
+    border: 1px solid #000;
+}
+
+#footer .big .download p {
+    font-size: 20px;
+    margin-left: 502px;
+    color: white;
+}
+
+#footer .big .download p a {
+    color: white;
+}
+
+#footer .big .copyright {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    height: 28px;
+}
+
+#footer .big .copyright .center {
+    height: 100%;
+    margin: 0 auto;
+    line-height: 28px;
+    font-size: 18px;
+    color: white;
+}
+
+#footer .big .copyright .center img {
+    width: 22px;
+    height: 22px;
+}
+
+#footer .big .copyright .center a {
+    color: white;
 }

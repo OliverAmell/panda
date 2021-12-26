@@ -55,13 +55,13 @@ body {
 }
 
 #head .search {
-    width: 532px;
+    width: 510px;
     height: 48px;
     border: 2px solid #0fb654;
     box-sizing: border-box;
     border-radius: 35px;
     float: left;
-    margin: 50px 0 0 108px;
+    margin: 50px 0 0 50px;
     background: url(../img/search.png) no-repeat center left 15pc/20px 20px;
     position: relative;
 }
@@ -97,10 +97,28 @@ body {
     float: right;
     margin: 43px 86px 0 0;
     font-size: 10px;
-    width: 275px;
+    width: 345px;
     height: 60px;
 }
 
+
+#head .loginOn {
+    width: 30px;
+    line-height: 35px;
+    font-size: 13px;
+    float: left;
+    margin-top: 17px;
+    margin-right: 40px;
+    border: 1px solid #0fb654;
+}
+
+#head .loginOn:hover {
+    background: rgb(194, 231, 236);
+}
+
+#head .loginOn a {
+    color: red;
+}
 
 #head .red {
     height: 35px;
@@ -117,13 +135,14 @@ body {
 }
 
 #head .cart {
-    color: rgb(126, 226, 167);
+    color: red;
 
 }
 
 #head .red a:hover {
     color: #db09ee;
 }
+
 
 #head .ensure li {
     float: left;

@@ -36,8 +36,6 @@ async function getProductData() {
         console.log(data);
         //tab切换(scss也需要解开注释代码)
         productImg(data)
-        //轮播(需注释掉tab需要的scss)
-        // ShowSwiper(data)
 
         dataShow(data)
         addCart(data.data.detail)

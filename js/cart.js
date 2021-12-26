@@ -11,7 +11,7 @@ function showCartList() {
     let carts = JSON.parse(cartListStr)
 
 
-    let str = `<tr>
+    let str = `<tr class="ttop">
             <td><input type="checkbox" class="checkbox-all" ${stateAll ? 'checked' : ''}></td>
             <td>序号</td>
             <th>商品图片</th>
